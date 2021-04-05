@@ -16,3 +16,8 @@
 $router->get('/', function () use ($router) {
     return $router->app->version();
 });
+
+# RUTAS DE LISTA DEL SUPER
+$router->get('/addlist', "ListMarketController@addList");
+$router->get('/updatelist', "ListMarketController@updateList");
+$router->get('/deletelist', "ListMarketController@deleteList");
